@@ -80,5 +80,8 @@ for w, s, e in mst_edges:
 
 print('최소 비용의 도로 연결도')
 print_graph(mst_graph)
-
 print(f"최소 비용 :  {mst_cost}")
+
+print("\n최소 간선 목록")
+for cost, s, e in mst_edges:
+	print(f"{cities[s]} --- {cities[e]} : {cost}")
